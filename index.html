@@ -60,16 +60,33 @@
 
 <main class="container">
   <!-- 히어로 (이미지는 /images/hero-2.webp|jpg 업로드 권장) -->
-  <section class="hero">
-    <picture>
-      <source srcset="/images/hero-2.webp" type="image/webp"/>
-      <img src="/images/hero-2.jpg" alt="감각적인 아로마 스파 히어로 이미지"/>
-    </picture>
-    <h1 style="font-size:34px; margin:14px 0 6px"><strong>서울·경기·인천 출장마사지</strong> | 츄츄마사지</h1>
+  <section class="hero-wrap">
+  <picture>
+    <!-- 모바일 세로 이미지 -->
+    <source srcset="/images/hero-mobile.webp" type="image/webp" media="(max-width: 767px)">
+    <source srcset="/images/hero-mobile.jpg" media="(max-width: 767px)">
+    <!-- 데스크탑 가로 이미지 -->
+    <source srcset="/images/hero-desktop.webp" type="image/webp" media="(min-width: 768px)">
+    <img
+      src="/images/hero-desktop.jpg"
+      alt="아로마 오일과 촛불 보케로 연출한 감각적인 스파 히어로 이미지"
+      width="1600" height="900" loading="eager" decoding="async"
+      class="hero-img">
+  </picture>
+
+  <!-- 상단/하단 그라데이션 오버레이 -->
+  <div class="hero-overlay"></div>
+
+  <!-- 히어로 위 텍스트(기존 텍스트/버튼 유지 가능) -->
+  <div class="hero-content container">
+    <h1><strong>서울·경기·인천 출장마사지</strong> | 츄츄마사지</h1>
     <p class="muted">영등포 포함 전지역 가능. 타이/아로마/힐링 전문. 빠른 예약은 전화 010-4637-9556 또는 오픈채팅으로 문의하세요.</p>
-    <p><a class="button primary" href="tel:01046379556">📞 지금 전화하기</a>
-       <a class="button" href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">💬 오픈채팅</a></p>
-  </section>
+    <p>
+      <a class="button primary" href="tel:01046379556">📞 지금 전화하기</a>
+      <a class="button" href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">💬 오픈채팅</a>
+    </p>
+  </div>
+</section>
 
   <!-- 코스·가격 -->
   <section class="card" id="pricing">
