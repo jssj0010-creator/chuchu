@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>츄츄마사지 | 출장마사지 · 홈케어</title>
+  <meta name="description" content="출장마사지 · 홈케어 전문 '츄츄마사지' — 건식 타이, 부들 아로마, 힐링코스, 스페셜 감성힐링. 전화 010-4637-9556, 카카오톡 msg00100." />
+  <meta name="format-detection" content="telephone=no" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="츄츄마사지 | 출장마사지 · 홈케어" />
+  <meta property="og:description" content="건식 타이 · 부들 아로마 · 힐링코스 · 스페셜 감성힐링. 지금 바로 문의하세요: 010-4637-9556 / 카톡 msg00100" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:locale" content="ko_KR" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://chuchu-massage.netlify.app" />
+  <style>
+    :root{ --bg:#0b0b0c; --card:#111114; --muted:#9aa0a6; --text:#e8eaed; --accent:#ffbe3b; --accent-2:#6ee7b7; --line:#1f2937; }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Pretendard,Apple SD Gothic Neo,Noto Sans KR,Helvetica,Arial,sans-serif;}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:0 20px}
+    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px); background:rgba(11,11,12,.7); border-bottom:1px solid var(--line)}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{display:flex; gap:10px; align-items:center}
+    .logo{width:36px; height:36px; border-radius:9px; background:linear-gradient(135deg,var(--accent),#ff7a18); display:grid; place-items:center; font-weight:900; color:#111}
+    .brand h1{font-size:18px; margin:0}
+    .nav-links{display:flex; gap:14px}
+    .button{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; border:1px solid var(--line); background:#151518; font-weight:600}
+    .button.primary{background:linear-gradient(135deg,var(--accent),#ffd26f); color:#111; border-color:transparent}
+    .button.ghost{background:transparent}
+    .hero{padding:64px 0 34px; border-bottom:1px solid var(--line); background:radial-gradient(1200px 600px at 70% -200px, rgba(255,190,59,.12), transparent)}
+    .hero h2{font-size:38px; line-height:1.2; margin:0 0 12px}
+    .hero p{margin:0 0 22px; color:var(--muted)}
+    .hero-cta{display:flex; gap:10px; flex-wrap:wrap}
+    .pill{display:inline-flex; align-items:center; gap:8px; background:#151518; border:1px solid var(--line); padding:8px 12px; border-radius:999px; font-size:14px; color:var(--muted)}
+    section{padding:40px 0}
+    .section-head{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom:16px}
+    .section-head h3{font-size:24px; margin:0}
+    .muted{color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:18px}
+    .grid{display:grid; gap:16px}
+    @media(min-width:720px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
+    @media(min-width:960px){ .grid.cols-3{grid-template-columns:1fr 1fr 1fr} }
+    .course{padding:18px}
+    .course h4{margin:0 0 6px; font-size:18px}
+    .price-list{margin:10px 0 0; padding:0; list-style:none; display:grid; gap:8px}
+    .price-item{display:flex; align-items:center; justify-content:space-between; background:#0f0f12; border:1px solid var(--line); border-radius:12px; padding:10px 12px}
+    .price-item .dur{font-weight:600}
+    .price-item .amt{font-variant-numeric:tabular-nums; font-weight:700}
+    .badge{display:inline-flex; align-items:center; gap:6px; padding:6px 10px; background:#121216; border:1px solid var(--line); border-radius:999px; font-size:12px; color:var(--muted)}
+    .badge.hot{background:rgba(255,190,59,.12); border-color:rgba(255,190,59,.35); color:#ffd98b}
+    .notice{padding:18px}
+    .notice ul{margin:0; padding:0 0 0 18px; color:var(--muted)}
+    .faq{padding:18px}
+    details{background:#0f0f12; border:1px solid var(--line); border-radius:14px; padding:12px 14px}
+    details+details{margin-top:10px}
+    summary{cursor:pointer; font-weight:700}
+    summary::-webkit-details-marker{display:none}
+    .contact{padding:18px; display:grid; gap:14px}
+    .contact .row{display:flex; flex-wrap:wrap; gap:10px}
+    .contact .kakao{display:flex; align-items:center; gap:8px; background:#121216; border:1px dashed var(--line); padding:10px 12px; border-radius:12px}
+    .contact code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; font-size:14px}
+    footer{border-top:1px solid var(--line); padding:24px 0; color:var(--muted)}
+    .floater{position:fixed; bottom:12px; left:50%; transform:translateX(-50%); z-index:60; background:rgba(16,16,20,.9); border:1px solid var(--line); box-shadow:0 10px 30px rgba(0,0,0,.4); border-radius:16px; padding:10px; display:flex; gap:8px}
+    @media(min-width:860px){ .floater{display:none} }
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .toast{position:fixed; bottom:24px; right:24px; background:#101014; color:#e8eaed; border:1px solid var(--line); padding:12px 14px; border-radius:12px; box-shadow:0 10px 24px rgba(0,0,0,.45); opacity:0; transform:translateY(8px); transition:all .25s ease}
+    .toast.show{opacity:1; transform:translateY(0)}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MassageTherapist",
+    "name": "츄츄마사지",
+    "areaServed": "대한민국",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "국회대로 800",
+      "addressLocality": "영등포구",
+      "addressRegion": "서울특별시",
+      "postalCode": ""
+    },
+    "telephone": "+82-10-4637-9556",
+    "priceRange": "₩₩",
+    "sameAs": [],
+    "keywords": ["출장마사지", "홈케어", "건식 타이", "아로마 마사지", "힐링 마사지"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="홈으로">
+        <div class="logo" aria-hidden="true">츄</div>
+        <h1>츄츄마사지</h1>
+      </a>
+      <nav class="nav-links" aria-label="주요 링크">
+        <a class="button ghost" href="#pricing">코스·가격</a>
+        <a class="button ghost" href="#notice">이용안내</a>
+        <a class="button ghost" href="#faq">FAQ</a>
+        <a class="button ghost" href="#openchat">오픈채팅</a>
+        <a class="button primary" href="tel:01046379556">전화 010-4637-9556</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="container">
+    <section class="hero">
+      <figure class="card" style="overflow:hidden; margin:0 0 18px 0; border-radius:18px">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1600&auto=format&fit=crop" alt="편안한 힐링을 상징하는 스파 이미지" style="display:block; width:100%; height:320px; object-fit:cover"/>
+      </figure>
+      <span class="pill">출장마사지 · 홈케어</span>
+      <h2><strong>숙면과 회복</strong>을 위한<br/>프리미엄 힐링 케어</h2>
+      <p>피로와 긴장을 풀어주는 1:1 맞춤 테라피. 예약/문의는 전화 또는 카카오톡으로 편하게 남겨주세요.</p>
+      <div class="hero-cta">
+        <a class="button primary" href="tel:01046379556" aria-label="전화하기" target="_blank" rel="noopener">📞 지금 전화: 010-4637-9556</a>
+        <a class="button" href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">💬 오픈채팅 참여하기</a>
+        <button class="button" id="copyKakao">카톡ID 복사: <strong>msg00100</strong></button>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="section-head">
+        <h3>코스 & 가격</h3>
+        <span class="badge hot">실시간 문의: 010-4637-9556 · 카톡 <strong>msg00100</strong></span>
+      </div>
+      <div class="grid cols-2">
+        <article class="card course" aria-labelledby="t-thai">
+          <h4 id="t-thai">건식 타이</h4>
+          <p class="muted">지친 근육을 시원하게 풀어주는 스트레칭 중심의 코스</p>
+          <ul class="price-list" aria-label="건식 타이 가격">
+            <li class="price-item"><span class="dur">60분</span><span class="amt">₩60,000 <small class="muted">(6만)</small></span></li>
+            <li class="price-item"><span class="dur">90분</span><span class="amt">₩80,000 <small class="muted">(8만)</small></span></li>
+            <li class="price-item"><span class="dur">120분</span><span class="amt">₩90,000 <small class="muted">(9만)</small></span></li>
+          </ul>
+        </article>
+
+        <article class="card course" aria-labelledby="t-aroma">
+          <h4 id="t-aroma">부들 아로마</h4>
+          <p class="muted">아로마 오일로 부드럽고 깊은 이완을 선사하는 코스</p>
+          <ul class="price-list" aria-label="부들 아로마 가격">
+            <li class="price-item"><span class="dur">60분</span><span class="amt">₩70,000 <small class="muted">(7만)</small></span></li>
+            <li class="price-item"><span class="dur">90분</span><span class="amt">₩90,000 <small class="muted">(9만)</small></span></li>
+            <li class="price-item"><span class="dur">120분</span><span class="amt">₩100,000 <small class="muted">(10만)</small></span></li>
+          </ul>
+        </article>
+
+        <article class="card course" aria-labelledby="t-healing">
+          <h4 id="t-healing">힐링코스</h4>
+          <p class="muted">컨디션 회복에 초점을 맞춘 밸런스 케어</p>
+          <ul class="price-list" aria-label="힐링코스 가격">
+            <li class="price-item"><span class="dur">60분</span><span class="amt">₩80,000 <small class="muted">(8만)</small></span></li>
+            <li class="price-item"><span class="dur">90분</span><span class="amt">₩100,000 <small class="muted">(10만)</small></span></li>
+            <li class="price-item"><span class="dur">120분</span><span class="amt">₩120,000 <small class="muted">(12만)</small></span></li>
+            <li class="price-item"><span class="dur">150분</span><span class="amt">₩150,000 <small class="muted">(15만)</small></span></li>
+          </ul>
+        </article>
+
+        <article class="card course" aria-labelledby="t-special">
+          <h4 id="t-special">스페셜 감성힐링</h4>
+          <p class="muted">감각적인 터치로 깊은 휴식을 이끄는 프리미엄 케어</p>
+          <ul class="price-list" aria-label="스페셜 감성힐링 가격">
+            <li class="price-item"><span class="dur">60분</span><span class="amt">₩100,000 <small class="muted">(10만)</small></span></li>
+            <li class="price-item"><span class="dur">90분</span><span class="amt">₩120,000 <small class="muted">(12만)</small></span></li>
+            <li class="price-item"><span class="dur">120분</span><span class="amt">₩140,000 <small class="muted">(14만)</small></span></li>
+            <li class="price-item"><span class="dur">150분</span><span class="amt">₩160,000 <small class="muted">(16만)</small></span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="openchat">
+      <div class="section-head">
+        <h3>오픈채팅</h3>
+        <span class="muted">빠르게 문의하고 싶다면 오픈채팅방으로 오세요</span>
+      </div>
+      <div class="card contact">
+        <div class="row">
+          <a class="button primary" href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">💬 오픈채팅 참여하기</a>
+          <div class="kakao">오픈채팅 주소: <code>https://open.kakao.com/o/shGxbqRh</code></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map">
+      <div class="section-head">
+        <h3>서비스 지역 · 지도</h3>
+        <span class="muted">서울 · 경기 · 인천 전지역 가능</span>
+      </div>
+      <div class="card" style="overflow:hidden">
+        <iframe title="서비스 지역 지도" src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EA%B5%AD%ED%9A%8C%EB%8C%80%EB%A1%9C%20800&output=embed" width="100%" height="360" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div style="display:flex; gap:8px; padding:12px; border-top:1px solid var(--line); flex-wrap:wrap">
+          <a class="button" href="https://map.kakao.com/?q=%EC%B8%84%EC%B8%84%EB%A7%88%EC%82%AC%EC%A7%80" target="_blank" rel="noopener">📍 카카오맵에서 보기</a>
+          <a class="button" href="https://m.map.naver.com/search2/search.naver?query=%EC%B8%84%EC%B8%84%EB%A7%88%EC%82%AC%EC%A7%80" target="_blank" rel="noopener">📍 네이버지도에서 보기</a>
+          <a class="button" href="https://www.google.com/maps/search/%EC%B8%84%EC%B8%84%EB%A7%88%EC%82%AC%EC%A7%80" target="_blank" rel="noopener">📍 구글지도에서 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="notice">
+      <div class="section-head">
+        <h3>이용 안내</h3>
+      </div>
+      <div class="card notice">
+        <ul>
+          <li>예약은 <strong>전화(010-4637-9556)</strong> 또는 <strong>카카오톡(ID: msg00100)</strong>으로 가능합니다.</li>
+          <li>출장 가능 지역, 대기 시간 등은 상담 시 친절히 안내드립니다.</li>
+          <li>건전한 힐링 마사지 서비스만 제공합니다. 불법 및 유흥 목적의 요청은 정중히 거절합니다.</li>
+          <li>개인정보와 안전을 최우선으로 합니다. 기사 배정 후 기사 정보(도착 예정 시간 등)를 안내드립니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="section-head">
+        <h3>자주 묻는 질문</h3>
+      </div>
+      <div class="card faq">
+        <details>
+          <summary>예약은 어떻게 하나요?</summary>
+          <div class="muted">전화 또는 카카오톡으로 성함/지역/원하는 시간/코스를 보내주시면 확인 후 배정 안내드립니다.</div>
+        </details>
+        <details>
+          <summary>남녀 모두 가능한가요?</summary>
+          <div class="muted">네, 누구나 편안하게 이용하실 수 있습니다. 단, 비매너·불법 요청은 즉시 종료됩니다.</div>
+        </details>
+        <details>
+          <summary>마사지 전 준비할 것이 있나요?</summary>
+          <div class="muted">편안한 복장과 따뜻한 실내 온도 정도만 준비해 주세요. 물·수건 등은 기사님이 안내드립니다.</div>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head">
+        <h3>예약 / 문의</h3>
+        <span class="muted">빠른 응답을 원하시면 전화주세요</span>
+      </div>
+      <div class="card contact">
+        <div class="row" aria-label="연락처">
+          <a class="button primary" href="tel:01046379556">📞 010-4637-9556 전화하기</a>
+          <div class="kakao" role="group" aria-label="카카오톡">
+            <span>💬 카카오톡 ID:</span>
+            <code id="kakaoId">msg00100</code>
+            <button class="button" id="copyKakao2" aria-label="카톡ID 복사">복사</button>
+            <a class="button" href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">오픈채팅</a>
+          </div>
+        </div>
+        <form id="reqForm" class="grid" autocomplete="on" novalidate>
+          <div class="grid cols-2">
+            <label>성함<br/><input name="name" required placeholder="홍길동" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--line); background:#0f0f12; color:#e8eaed"></label>
+            <label>지역<br/><input name="area" required placeholder="예: 영등포구" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--line); background:#0f0f12; color:#e8eaed"></label>
+          </div>
+          <div class="grid cols-2">
+            <label>원하는 시간<br/><input name="time" placeholder="예: 오늘 21시" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--line); background:#0f0f12; color:#e8eaed"></label>
+            <label>선택 코스<br/>
+              <select name="course" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--line); background:#0f0f12; color:#e8eaed">
+                <option>건식 타이</option>
+                <option>부들 아로마</option>
+                <option>힐링코스</option>
+                <option>스페셜 감성힐링</option>
+              </select>
+            </label>
+          </div>
+          <button type="submit" class="button primary" style="justify-content:center">예약요청 메시지 만들기</button>
+          <p class="muted" id="outMsg" style="margin:0"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="floater" role="group" aria-label="빠른 연락">
+    <a class="button primary" href="tel:01046379556">📞 전화</a>
+    <a class="button" href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">💬 오픈채팅</a>
+    <button class="button" id="copyKakao3">카톡ID 복사</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">카톡 ID가 복사되었습니다.</div>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+        <div>© <span id="y"></span> <strong>츄츄마사지</strong>. All rights reserved.</div>
+        <div class="muted">문의: 010-4637-9556 · 카톡 msg00100</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const y = document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); }
+      const toast = document.getElementById('toast');
+      function showToast(msg){ toast.textContent = msg; toast.classList.add('show'); setTimeout(()=>toast.classList.remove('show'), 1800); }
+      function copyKakao(){
+        const id = 'msg00100';
+        navigator.clipboard.writeText(id).then(()=>showToast('카톡 ID가 복사되었습니다: '+id)).catch(()=>showToast('복사 실패. 직접 입력해주세요: '+id));
+      }
+      ['copyKakao','copyKakao2','copyKakao3'].forEach(id=>{
+        const el=document.getElementById(id); if(el) el.addEventListener('click', copyKakao);
+      });
+      const form = document.getElementById('reqForm');
+      if(form){
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          const d = new FormData(form);
+          const name = d.get('name')||'';
+          const area = d.get('area')||'';
+          const time = d.get('time')||'';
+          const course = d.get('course')||'';
+          const msg = `[예약요청]\n성함: ${name}\n지역: ${area}\n원하는 시간: ${time}\n코스: ${course}\n연락처: 010-4637-9556 또는 카톡 msg00100`;
+          const out = document.getElementById('outMsg');
+          if(out){
+            out.innerHTML = '아래 문구를 카톡으로 보내주세요:<br><code style="display:block; white-space:pre-wrap; background:#0f0f12; border:1px solid var(--line); padding:10px 12px; border-radius:10px">'+msg+'</code>';
+          }
+          navigator.clipboard.writeText(msg).then(()=>showToast('예약요청 문구가 복사되었습니다. 카톡으로 붙여넣기 하세요.'));
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

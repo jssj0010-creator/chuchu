@@ -1,0 +1,7 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer-when-downgrade
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Cache-Control: public, max-age=3600
+  Content-Security-Policy: default-src 'self' https://open.kakao.com https://www.google.com https://images.unsplash.com; script-src 'self' 'unsafe-inline' https://www.google.com; img-src 'self' data: https://images.unsplash.com https://www.google.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline'; frame-src https://www.google.com; connect-src 'self'
