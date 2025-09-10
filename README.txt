@@ -1,8 +1,15 @@
-# Ahrefs Fix Pack 적용 가이드
-(요약)
-1) `_headers` 교체 → 사이트맵/로봇 파일의 Content-Type 지정
-2) 히어로 이미지를 WebP+jpg로 `/images/hero.webp`, `/images/hero.jpg` 업로드 후 `_snippet_hero.html`로 교체
-3) 상세 페이지 상단에 빵부스러기(HTML+JSON-LD) 추가 → 허브로 내부링크 강화
-4) FAQ/비즈니스 스키마 삽입 → 구조화 데이터 오류 제거
-5) 메타 설명 130~160자로 보강
-6) 배포 후 Ahrefs Site Audit 재실행 → 개선 확인
+# Images Restore Pack
+다음 폴더를 **배포 루트**에 그대로 업로드하면 index.html의 이미지가 다시 표시됩니다.
+
+업로드 경로:
+- /images/hero-desktop.jpg
+- /images/hero-desktop.webp
+- /images/hero-mobile.jpg
+- /images/hero-mobile.webp
+
+테스트:
+브라우저에서 아래 4개가 200 OK로 열리면 성공입니다.
+- https://www.chu-massage.com/images/hero-desktop.jpg
+- https://www.chu-massage.com/images/hero-desktop.webp
+- https://www.chu-massage.com/images/hero-mobile.jpg
+- https://www.chu-massage.com/images/hero-mobile.webp
