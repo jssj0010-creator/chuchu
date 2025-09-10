@@ -1,4 +1,9 @@
 /*
+  X-Debug-Header: on
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+/*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer-when-downgrade
