@@ -31,17 +31,17 @@
     .button.primary{background:linear-gradient(135deg,var(--accent),#ffd26f); color:#111; border-color:transparent}
 
     /* 히어로 */
-    /* HERO SIZE */
+/* HERO SIZE (Desktop max 360px / Mobile max 440px) */
 .hero-wrap{
   position: relative;
   overflow: hidden;
   border-radius: 18px;
-  /* 데스크탑 기준: 최소 220px ~ 최대 420px 사이로 자동 조절 */
-  height: clamp(220px, 38vw, 420px);
+  /* 데스크탑: 최소 220px ~ 최대 360px */
+  height: clamp(220px, 38vw, 360px);
 }
 @media (max-width: 767px){
-  /* 모바일은 약간 더 높게 */
-  .hero-wrap{ height: clamp(220px, 60vw, 520px); }
+  /* 모바일: 최소 220px ~ 최대 440px */
+  .hero-wrap{ height: clamp(220px, 60vw, 440px); }
 }
 .hero-img{
   width: 100%;
@@ -49,6 +49,7 @@
   object-fit: cover;
   display: block;
 }
+
 
 
 
