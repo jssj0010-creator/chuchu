@@ -1,0 +1,22 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MassageTherapist",
+  "@id": "https://www.chu-massage.com/#business",
+  "name": "츄츄마사지",
+  "url": "https://www.chu-massage.com/",
+  "telephone": "+82-10-4637-9556",
+  "areaServed": ["서울특별시","경기도","인천광역시"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "국회대로 800",
+    "addressLocality": "영등포구",
+    "addressRegion": "서울특별시",
+    "addressCountry": "KR"
+  },
+  "hasMap": "https://www.google.com/maps?q=서울시 영등포구 국회대로 800",
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens": "00:00","closes": "23:59"}
+  ]
+}
+</script>
