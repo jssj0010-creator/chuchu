@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chuchu-massage.netlify.app/sitemap.xml
+Sitemap: https://www.chu-massage.com/sitemap.xml
+Sitemap: https://www.chu-massage.com/sitemap-regional.xml
