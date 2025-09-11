@@ -1,0 +1,18 @@
+/* === Mobile Hotfix (drop-in) === */
+html, body { margin:0; padding:0; max-width:100%; overflow-x:hidden; }
+*, *::before, *::after { box-sizing:border-box; min-width:0; }
+img, video, canvas { display:block; max-width:100%; height:auto; }
+h1, h2, h3, p, a, button, span { word-break:keep-all; overflow-wrap:anywhere; margin:0; }
+.container, .wrap, main { width:100%; max-width:960px; margin-inline:auto; padding-inline:16px; }
+.nav-grid, .top-nav, .menu-grid, nav ul { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:8px; }
+@media (max-width:380px){ .nav-grid, .top-nav, .menu-grid, nav ul { grid-template-columns:repeat(3, minmax(0,1fr)); } }
+.nav-grid a, .top-nav a, .menu-grid a, nav ul a,
+.nav-grid button, .top-nav button, .menu-grid button, nav ul button { display:flex; align-items:center; justify-content:center; text-align:center; width:100%; }
+.card, .panel, .box, section { border-radius:16px; padding:16px; }
+.price-list .row, .course .row, .list-row { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.price-list .label, .course .label, .list-row .label { flex:1 1 auto; min-width:0; }
+.price-list .price, .course .price, .list-row .price { flex:0 0 auto; white-space:nowrap; }
+.header, .header-bar, header { position:sticky; top:0; z-index:50; }
+.header .cta, .header-bar .cta, header .cta { margin-left:auto; }
+[class*="hero"], [class*="banner"], .hero, .banner { width:100%; } /* avoid 100vw */
+ul, ol { padding-left:1.1rem; }
