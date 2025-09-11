@@ -16,3 +16,7 @@ h1, h2, h3, p, a, button, span { word-break:keep-all; overflow-wrap:anywhere; ma
 .header .cta, .header-bar .cta, header .cta { margin-left:auto; }
 [class*="hero"], [class*="banner"], .hero, .banner { width:100%; } /* avoid 100vw */
 ul, ol { padding-left:1.1rem; }
+/* luxe.css 맨 아래나 mobile-hotfix.css에 */
+.brand { display:flex; align-items:center; gap:10px; }
+.brand-logo { width:28px; height:28px; flex:0 0 28px; }
+.brand-name { font-weight:700; }
