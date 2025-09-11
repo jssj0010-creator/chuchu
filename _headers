@@ -21,3 +21,12 @@
 /sitemap-regional.xml
   Content-Type: application/xml; charset=utf-8
   Cache-Control: public, max-age=3600
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/styles/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
