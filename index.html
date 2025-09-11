@@ -3,73 +3,188 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>서울·경기·인천 출장마사지 | 츄츄마사지</title>
-  <meta name="description" content="서울·경기·인천 출장마사지 ‘츄츄마사지’. 타이/아로마/힐링 전문, 합리적 가격과 빠른 예약. 영등포 포함 전지역 가능. 010-4637-9556 · 카톡 msg00100"/>
 
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="서울·경기·인천 출장마사지 | 츄츄마사지"/>
-  <meta property="og:description" content="서울·경기·인천 출장마사지 ‘츄츄마사지’. 타이/아로마/힐링 전문, 합리적 가격과 빠른 예약. 영등포 포함 전지역 가능. 010-4637-9556 · 카톡 msg00100"/>
-  <meta property="og:image" content="https://www.chu-massage.com/images/hero-2.jpg"/>
+  <title>서울·경기·인천 출장마사지 | 츄츄마사지 (선입금 없음·30~60분 배정)</title>
+  <meta name="description" content="서울·경기·인천 출장마사지 ‘츄츄마사지’. 선입금 없음, 평균 30–60분 배정. 건식 타이·아로마·힐링 전문. 영등포 포함 전지역 방문. 010-4637-9556 · 카톡 msg00100"/>
 
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
   <link rel="canonical" href="https://www.chu-massage.com/"/>
 
+  <!-- Open Graph / 공유 썸네일 -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="서울·경기·인천 출장마사지 | 츄츄마사지"/>
+  <meta property="og:description" content="선입금 없음 · 30–60분 배정 · 타이/아로마/힐링 전문"/>
+  <meta property="og:url" content="https://www.chu-massage.com/"/>
+  <meta property="og:image" content="https://www.chu-massage.com/images/og-cover.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="서울·경기·인천 출장마사지 | 츄츄마사지"/>
+  <meta name="twitter:description" content="선입금 없음 · 30–60분 배정 · 타이/아로마/힐링"/>
+  <meta name="twitter:image" content="https://www.chu-massage.com/images/og-cover.jpg"/>
+
+  <!-- Favicons / PWA -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <style>
-    :root{ --bg:#0b0b0c; --card:#111114; --muted:#9aa0a6; --text:#e8eaed; --accent:#ffbe3b; --line:#1f2937; }
+    /* ===== 기본 토큰 ===== */
+    :root{
+      --bg:#0b0b0c; --card:#111114; --muted:#9aa0a6; --text:#e8eaed; --accent:#ffbe3b; --line:#1f2937;
+    }
     *{box-sizing:border-box}
-    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Pretendard,Noto Sans KR,sans-serif;}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Pretendard,Noto Sans KR,sans-serif;}
     a{color:inherit; text-decoration:none}
     .container{max-width:1100px; margin:0 auto; padding:0 20px}
 
-    /* 헤더/네비 */
-    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px); background:rgba(11,11,12,.7); border-bottom:1px solid var(--line)}
+    /* ===== 헤더/네비 ===== */
+    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px);
+      background:rgba(11,11,12,.7); border-bottom:1px solid var(--line)}
     .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
     .brand{display:flex; gap:10px; align-items:center}
-    .logo{width:36px; height:36px; border-radius:9px; background:linear-gradient(135deg,var(--accent),#ff7a18); display:grid; place-items:center; font-weight:900; color:#111}
+    .logo{width:36px; height:36px; border-radius:9px; background:linear-gradient(135deg,var(--accent),#ff7a18);
+      display:grid; place-items:center; font-weight:900; color:#111}
     .nav-links{display:flex; gap:14px}
-    .button{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; border:1px solid var(--line); background:#151518; font-weight:600}
+    .button{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px;
+      border:1px solid var(--line); background:#151518; font-weight:600}
     .button.primary{background:linear-gradient(135deg,var(--accent),#ffd26f); color:#111; border-color:transparent}
 
-    /* 히어로 */
-    /* 데스크탑 최대 360 / 모바일 최대 440 유지 + 아래 간격 확보 */
-.hero-wrap{
-  position: relative;
-  overflow: hidden;
-  border-radius: 18px;
-  height: clamp(220px, 38vw, 360px);  /* 데스크탑 */
-  margin: 0 0 24px;                   /* ▼ 히어로와 다음 섹션 사이 간격 */
-  padding-bottom: 1px;                /* 마진 콜랩스 방지용 가짜 패딩 */
-  border-bottom: 1px solid transparent; /* (대체안) 콜랩스 방지 */
-}
-@media (max-width: 767px){
-  .hero-wrap{ height: clamp(220px, 60vw, 440px); }  /* 모바일 */
-}
+    /* ===== 히어로 ===== */
+    .hero-wrap{
+      position: relative; overflow: hidden; border-radius: 18px;
+      height: clamp(220px, 38vw, 360px); margin: 0 0 24px; padding-bottom:1px; border-bottom:1px solid transparent;
+    }
+    @media (max-width: 767px){ .hero-wrap{ height: clamp(220px, 60vw, 440px); } }
+    .hero-img{ width: 100%; height: 100%; object-fit: cover; display:block; }
+    .hero-wrap + section{ margin-top: 0 !important; } /* 히어로 다음 섹션 상단 여백 제거 */
+    .card{ position: relative; z-index:1; }
 
-.hero-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* 히어로 바로 다음 섹션은 위쪽 마진 제거(중복 간격 방지) */
-.hero-wrap + section{ margin-top: 0 !important; }
-
-/* 혹시 겹칠 경우 카드가 위에 오도록 */
-.card{ position: relative; z-index: 1; }
-
-
-
-    /* 섹션/카드 */
+    /* ===== 섹션/카드 ===== */
     section{padding:40px 0}
     .muted{color:var(--muted)}
     .card{background:#111114; border:1px solid var(--line); border-radius:18px; padding:18px}
     .grid{display:grid; gap:16px}
     @media(min-width:720px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
-
-    /* 해시 점프 부드럽게 & 헤더에 가려지지 않게 */
     html{scroll-behavior:smooth}
-    section{scroll-margin-top:100px} /* 헤더 높이에 맞춰 조정 */
+    section{scroll-margin-top:100px}
+
+    /* ====== Luxe Dark — 고급/세련 테마 (추가) ====== */
+    :root{
+      --bg:#0a0b0d;
+      --card:#0e1116;
+      --line:#1c2432;
+      --muted:#aab2bf;
+      --text:#eef1f5;
+      --accent:#d8b35e;     /* 샴페인 골드 */
+      --accent-2:#f1d48a;   /* 라이트 골드 */
+      --ring:#364155;
+    }
+    body{
+      background: radial-gradient(90rem 60rem at 20% -20%, #12161f 0%, #0a0b0d 55%) fixed;
+    }
+    @media (min-width:1024px){
+      body::before{
+        content:""; position:fixed; inset:-50% -50% -60% -50%; pointer-events:none; z-index:-1;
+        background-image: radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,.04) 0, transparent 60%),
+                         radial-gradient(1px 1px at 80% 70%, rgba(255,255,255,.03) 0, transparent 60%);
+      }
+    }
+    header{
+      background: rgba(10,11,13,.55);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      backdrop-filter: saturate(160%) blur(10px);
+    }
+    .button{ border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(20,25,33,.9), rgba(14,17,22,.9));
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease; }
+    .button:hover{ transform: translateY(-1px); border-color: rgba(255,255,255,.14); box-shadow: 0 8px 24px rgba(0,0,0,.28); }
+    .button.primary{
+      color:#111; background: linear-gradient(135deg, var(--accent), var(--accent-2)); border:0;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 10px 30px rgba(216,179,94,.18);
+    }
+    .button.primary:hover{
+      background: linear-gradient(135deg, var(--accent-2), #ffe6a6);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 12px 36px rgba(216,179,94,.26);
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(18,22,29,.70), rgba(14,17,22,.70));
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.03);
+      backdrop-filter: saturate(140%) blur(8px);
+    }
+    .card:hover{ border-color: rgba(255,255,255,.10); }
+    .hero-content h1{ letter-spacing:-.01em; }
+    .hero-content h1 strong{
+      background: linear-gradient(120deg, #ffffff 0%, #f3efe4 40%, #d8b35e 70%, #b7964a 100%);
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .hero-overlay{
+      pointer-events:none; position:absolute; inset:0;
+      background: linear-gradient(180deg, rgba(8,9,12,.55), rgba(8,9,12,0) 38%, rgba(8,9,12,.65) 100%);
+    }
+    .section-kicker{
+      display:inline-block; margin-bottom:10px; letter-spacing:.12em; text-transform:uppercase;
+      font-size:12px; color:#e7d7a2;
+      background: rgba(216,179,94,.08); border:1px solid rgba(216,179,94,.28);
+      padding:4px 10px; border-radius:9999px;
+    }
+    .muted{ color: var(--muted); }
+
+    .price-title{ display:flex; align-items:center; gap:10px; font-weight:800; font-size:18px; letter-spacing:.005em; }
+    .pill{
+      display:inline-block; padding:2px 10px; font-size:12px; font-weight:800;
+      border-radius:9999px; color:#111; line-height:1.9; border:0;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+    }
+    .pill-alt{
+      color:#e7ecf2; background: linear-gradient(180deg, #171c24,#12161d);
+      border: 1px solid #2a3242; box-shadow: none;
+    }
+    .text-accent{ color: var(--accent); font-weight:800; }
+    .pill-yellow{
+      background: transparent; color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 2px 10px; border-radius: 9999px; font-weight:800;
+      box-shadow: 0 0 0 1px rgba(216,179,94,.08) inset;
+    }
+
+    .price-list{ list-style:none; margin:12px 0 0; padding:0; }
+    .price-list li{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 14px; border-radius:12px;
+      border:1px solid rgba(255,255,255,.055);
+      background: linear-gradient(180deg, rgba(255,255,255,.018), rgba(255,255,255,.01));
+    }
+    .price-list li + li{ margin-top:8px; }
+    .price-list b{ font-weight:800; }
+    .price-list span{ font-variant-numeric: tabular-nums; font-weight:900; letter-spacing:.015em; color:#f6e2a4; }
+
+    .price-card{ transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+    .price-card:hover{ transform: translateY(-2px); box-shadow: 0 16px 44px rgba(0,0,0,.35);
+      border-color: rgba(255,255,255,.12); }
+
+    .notice-prepay{
+      border-left: 3px solid var(--accent);
+      background:
+        radial-gradient(80rem 40rem at 10% -20%, rgba(216,179,94,.06), transparent 45%),
+        linear-gradient(180deg, rgba(18,22,29,.80), rgba(14,17,22,.80));
+    }
+    .notice-prepay .hr-dim{
+      border:0; height:1px;
+      background:linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent);
+      margin:14px 0;
+    }
+
+    a:hover{ text-decoration: underline; text-decoration-color: rgba(255,255,255,.25); }
+    a:focus-visible, .button:focus-visible{ outline:2px solid var(--ring); outline-offset:2px; border-radius:12px; }
+    footer a{ color:#cfd5df; } footer a:hover{ color:#fff; text-decoration:underline; }
   </style>
 </head>
 <body>
@@ -77,7 +192,6 @@
   <div class="container nav">
     <a class="brand" href="/"><div class="logo">츄</div><strong>츄츄마사지</strong></a>
     <nav class="nav-links">
-      <!-- 해시만 사용 -->
       <a class="button" href="#pricing">코스·가격</a>
       <a class="button" href="/regions.html">지역별</a>
       <a class="button" href="#openchat">오픈채팅</a>
@@ -87,129 +201,133 @@
 </header>
 
 <main class="container">
-  <!-- 히어로 (이미지는 /images/hero-2.webp|jpg 업로드 권장) -->
+
+  <!-- 히어로 -->
   <section class="hero-wrap">
-  <picture>
-    <!-- 모바일 세로 이미지 -->
-    <source srcset="/images/hero-mobile.webp" type="image/webp" media="(max-width: 767px)">
-    <source srcset="/images/hero-mobile.jpg" media="(max-width: 767px)">
-    <!-- 데스크탑 가로 이미지 -->
-    <source srcset="/images/hero-desktop.webp" type="image/webp" media="(min-width: 768px)">
-    <img
-      src="/images/hero-desktop.jpg"
-      alt="아로마 오일과 촛불 보케로 연출한 감각적인 스파 히어로 이미지"
-      width="1600" height="900" loading="eager" decoding="async"
-      class="hero-img">
-  </picture>
+    <picture>
+      <!-- 모바일 -->
+      <source srcset="/images/hero-mobile.webp" type="image/webp" media="(max-width: 767px)">
+      <source srcset="/images/hero-mobile.jpg" media="(max-width: 767px)">
+      <!-- 데스크탑 -->
+      <source srcset="/images/hero-desktop.webp" type="image/webp" media="(min-width: 768px)">
+      <img
+        src="/images/hero-desktop.jpg"
+        alt="아로마 오일과 촛불 보케로 연출한 감성적인 스파 히어로 이미지"
+        width="1600" height="900" loading="eager" decoding="async" fetchpriority="high"
+        sizes="(max-width: 767px) 100vw, 1100px"
+        class="hero-img">
+    </picture>
+    <div class="hero-overlay"></div>
 
-  <!-- 상단/하단 그라데이션 오버레이 -->
-  <div class="hero-overlay"></div>
-
-  <!-- 히어로 위 텍스트(기존 텍스트/버튼 유지 가능) -->
-  <div class="hero-content container">
-    <h1><strong>서울·경기·인천 출장마사지</strong> | 츄츄마사지</h1>
-    <p class="muted">영등포 포함 전지역 가능. 타이/아로마/힐링 전문. 빠른 예약은 전화 010-4637-9556 또는 오픈채팅으로 문의하세요.</p>
-    <p>
-      <a class="button primary" href="tel:01046379556">📞 지금 전화하기</a>
-      <a class="button" href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">💬 오픈채팅</a>
-    </p>
-  </div>
-</section>
+    <div class="hero-content container">
+      <h1><strong>서울·경기·인천 출장마사지</strong> | 츄츄마사지</h1>
+      <p class="muted">영등포 포함 전지역 가능. 타이/아로마/힐링 전문. 빠른 예약은 전화 010-4637-9556 또는 오픈채팅으로 문의하세요.</p>
+      <p>
+        <a class="button primary" href="tel:01046379556">📞 지금 전화하기</a>
+        <a class="button" href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">💬 오픈채팅</a>
+      </p>
+    </div>
+  </section>
 
   <!-- 코스·가격 -->
   <section class="card" id="pricing">
-  <span class="section-kicker">코스 & 가격</span>
-  <h2>서울·경기·인천 출장마사지 <span class="muted" style="font-weight:400">｜ 합리적·정찰제</span></h2>
+    <span class="section-kicker">코스 & 가격</span>
+    <h2>서울·경기·인천 출장마사지 <span class="muted" style="font-weight:400">｜ 합리적·정찰제</span></h2>
 
-  <div class="grid cols-2">
-    <div class="card price-card">
-      <div class="price-title">건식 타이 <span class="pill">기본</span></div>
-      <ul class="price-list">
-        <li><b>60분</b><span>6만</span></li>
-        <li><b>90분</b><span>8만</span></li>
-        <li><b>120분</b><span>9만</span></li>
-      </ul>
+    <div class="grid cols-2">
+      <div class="card price-card">
+        <div class="price-title">건식 타이 <span class="pill">기본</span></div>
+        <ul class="price-list">
+          <li><b>60분</b><span>6만</span></li>
+          <li><b>90분</b><span>8만</span></li>
+          <li><b>120분</b><span>9만</span></li>
+        </ul>
+      </div>
+
+      <div class="card price-card">
+        <div class="price-title">부들 아로마</div>
+        <ul class="price-list">
+          <li><b>60분</b><span>7만</span></li>
+          <li><b>90분</b><span>9만</span></li>
+          <li><b>120분</b><span>10만</span></li>
+        </ul>
+      </div>
+
+      <!-- 힐링코스 -->
+      <div class="card price-card">
+        <div class="price-title">
+          힐링코스 <span class="pill-yellow">[추천 코스]</span>
+        </div>
+        <ul class="price-list">
+          <li><b>60분</b><span>8만</span></li>
+          <li><b>90분</b><span>10만</span></li>
+          <li><b>120분</b><span>12만</span></li>
+          <li><b>150분</b><span>15만</span></li>
+        </ul>
+      </div>
+
+      <!-- 스페셜 감성힐링 -->
+      <div class="card price-card">
+        <div class="price-title">
+          스페셜 감성힐링
+          <span class="pill">프리미엄</span>
+          <span class="pill-yellow">[추천 코스]</span>
+        </div>
+        <ul class="price-list">
+          <li><b>60분</b><span>10만</span></li>
+          <li><b>90분</b><span>12만</span></li>
+          <li><b>120분</b><span>14만</span></li>
+          <li><b>150분</b><span>16만</span></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="card price-card">
-      <div class="price-title">부들 아로마 </div>
-      <ul class="price-list">
-        <li><b>60분</b><span>7만</span></li>
-        <li><b>90분</b><span>9만</span></li>
-        <li><b>120분</b><span>10만</span></li>
-      </ul>
-    </div>
+    <p class="section-note">※ 지역·시간에 따라 대기 시간이 있을 수 있습니다.</p>
+  </section>
 
-    <!-- 힐링코스 -->
-<div class="card price-card">
-  <div class="price-title">
-    힐링코스 <span class="text-accent">[추천 코스]</span>
-  </div>
-  <ul class="price-list">
-    <li><b>60분</b><span>8만</span></li>
-    <li><b>90분</b><span>10만</span></li>
-    <li><b>120분</b><span>12만</span></li>
-    <li><b>150분</b><span>15만</span></li>
-  </ul>
-</div>
+  <!-- 지역 안내 -->
+  <section class="card">
+    <h2 style="margin:0 0 8px">지역 안내</h2>
+    <p>서울·경기·인천 전지역 출장 가능하며, 아래 지역 페이지에서 상세 안내를 확인할 수 있습니다.</p>
+    <p>
+      <a class="button" href="/seoul.html">서울 출장마사지</a>
+      <a class="button" href="/gyeonggi.html">경기 출장마사지</a>
+      <a class="button" href="/incheon.html">인천 출장마사지</a>
+    </p>
+  </section>
 
-<!-- 스페셜 감성힐링 -->
-<div class="card price-card">
-  <div class="price-title">
-    스페셜 감성힐링 
-    <span class="pill">프리미엄</span>
-    <span class="text-accent">[추천 코스]</span>
-  </div>
-  <ul class="price-list">
-    <li><b>60분</b><span>10만</span></li>
-    <li><b>90분</b><span>12만</span></li>
-    <li><b>120분</b><span>14만</span></li>
-    <li><b>150분</b><span>16만</span></li>
-  </ul>
-</div>
-
-
-  <p class="section-note">※ 지역·시간에 따라 대기 시간이 있을 수 있습니다.</p>
-</section>
-
-
-  <!-- 오픈채팅 섹션 (점프 타겟) -->
+  <!-- 오픈채팅 섹션 -->
   <section class="card" id="openchat">
     <h2>오픈채팅</h2>
     <p>빠른 배정은 오픈채팅으로 위치(동/상호)만 남겨주세요. 배정 후 예상 도착시간을 안내드립니다.</p>
     <p><a class="button" href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">💬 오픈채팅 바로가기</a></p>
   </section>
 
-  <!-- 소개/이용안내/팁/정책 (본문 보강) -->
+  <!-- 소개/공지/이용안내/팁/정책 -->
   <section class="card" id="about">
     <h2>츄츄마사지 소개</h2>
     <p>츄츄마사지는 <strong>서울·경기·인천 전 지역 출장 케어</strong>를 제공합니다. 숙련 테라피스트가 방문하여
     <em>건식 타이 / 부들 아로마 / 힐링 / 스페셜 감성힐링</em> 중 현재 컨디션에 맞는 코스를 안내합니다. 과장 없는 가격과 정확한 도착 시간을 약속드려요.</p>
   </section>
-<section class="card notice-prepay" id="prepay-policy">
-  <span class="section-kicker">사칭/사기 주의</span>
-  <h2>🔒 선입금 받지 않습니다</h2>
-  <p><strong>예약은 전화/오픈채팅으로만</strong> 진행하며,
-     <strong>결제는 테라피스트 도착 후 현장 결제</strong>로 진행합니다.</p>
 
-  <hr class="hr-dim">
-
-  <ul class="bullet-x">
-    <li>계좌이체·상품권(문화/구글/편의점)·선결제 링크·QR 송금 요구 <strong>절대 없음</strong></li>
-    <li>요구 시 <strong>사칭/사기</strong>입니다. 반드시 공식 연락처로 확인해 주세요.</li>
-  </ul>
-
-  <ul class="bullet-check" style="margin-top:10px">
-    <li><strong>예약 변경/취소</strong>: 최소 30분 전 연락. 선입금 없으니 취소 수수료도 없음</li>
-    <li><strong>현장 결제</strong>: 현금 또는 현장 확인 후 이체(요청 시 영수증 안내)</li>
-  </ul>
-
-  <p class="muted" style="margin-top:12px">
-    공식 연락처: 전화 010-4637-9556 · 카톡 msg00100 ·
-    <a href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">오픈채팅</a>
-  </p>
-</section>
-
+  <section class="card notice-prepay" id="prepay-policy">
+    <span class="section-kicker">사칭/사기 주의</span>
+    <h2>🔒 선입금 받지 않습니다</h2>
+    <p><strong>예약은 전화/오픈채팅으로만</strong> 진행하며, <strong>결제는 테라피스트 도착 후 현장 결제</strong>로 진행합니다.</p>
+    <hr class="hr-dim">
+    <ul class="bullet-x">
+      <li>계좌이체·상품권(문화/구글/편의점)·선결제 링크·QR 송금 요구 <strong>절대 없음</strong></li>
+      <li>요구 시 <strong>사칭/사기</strong>입니다. 반드시 공식 연락처로 확인해 주세요.</li>
+    </ul>
+    <ul class="bullet-check" style="margin-top:10px">
+      <li><strong>예약 변경/취소</strong>: 최소 30분 전 연락. 선입금 없으니 취소 수수료도 없음</li>
+      <li><strong>현장 결제</strong>: 현금 또는 현장 확인 후 이체(요청 시 영수증 안내)</li>
+    </ul>
+    <p class="muted" style="margin-top:12px">
+      공식 연락처: 전화 010-4637-9556 · 카톡 msg00100 ·
+      <a href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">오픈채팅</a>
+    </p>
+  </section>
 
   <section class="card" id="why">
     <h2>왜 츄츄마사지인가요?</h2>
@@ -246,7 +364,7 @@
     </ul>
   </section>
 
-  <!-- 비즈니스 스키마 (도메인 교정) -->
+  <!-- 비즈니스 스키마 -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -268,6 +386,9 @@
     <div>문의: 010-4637-9556 · 카톡 msg00100</div>
   </div>
 </footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+<script>
+  document.getElementById('y').textContent=new Date().getFullYear()
+</script>
 </body>
 </html>
