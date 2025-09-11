@@ -1,0 +1,156 @@
+
+/* ===================== Luxe Dark — 고급/세련 테마 (Regional Pack) =====================
+   이 파일을 /styles/luxe.css 로 업로드하고,
+   각 지역 페이지(seoul.html / gyeonggi.html / incheon.html)의 </head> 바로 위에 아래를 추가하세요:
+   <link rel="stylesheet" href="/styles/luxe.css">
+   (기존 인라인 스타일과 함께 동작하며, 아래 규칙이 우선 적용됩니다)
+======================================================================= */
+
+/* 공통 토큰 (기존 값이 있으면 아래가 우선 적용) */
+:root{
+  --bg:#0a0b0d;
+  --card:#0e1116;
+  --line:#1c2432;
+  --muted:#aab2bf;
+  --text:#eef1f5;
+  --accent:#d8b35e;     /* 샴페인 골드 */
+  --accent-2:#f1d48a;   /* 라이트 골드 */
+  --ring:#364155;
+}
+
+/* 배경 그라데이션 + 미세 노이즈 */
+body{
+  background: radial-gradient(90rem 60rem at 20% -20%, #12161f 0%, #0a0b0d 55%) fixed;
+  color: var(--text);
+}
+@media (min-width: 1024px){
+  body::before{
+    content:""; position:fixed; inset:-50% -50% -60% -50%; pointer-events:none; z-index:-1;
+    background-image: radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,.04) 0, transparent 60%),
+                      radial-gradient(1px 1px at 80% 70%, rgba(255,255,255,.03) 0, transparent 60%);
+  }
+}
+
+/* 카드: 글래스 느낌 + 헤어라인 보더 */
+.card{
+  background: linear-gradient(180deg, rgba(18,22,29,.70), rgba(14,17,22,.70)) !important;
+  border: 1px solid rgba(255,255,255,.06) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.03) !important;
+  backdrop-filter: saturate(140%) blur(8px);
+}
+.card:hover{ border-color: rgba(255,255,255,.10); }
+
+/* 헤더: 더 투명하고 얇게 */
+header{
+  background: rgba(10,11,13,.55) !important;
+  border-bottom: 1px solid rgba(255,255,255,.06) !important;
+  backdrop-filter: saturate(160%) blur(10px) !important;
+}
+
+/* 버튼: 골드 포일 느낌 */
+.button{
+  border: 1px solid var(--line) !important;
+  background: linear-gradient(180deg, rgba(20,25,33,.9), rgba(14,17,22,.9)) !important;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+}
+.button:hover{
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,.14);
+  box-shadow: 0 8px 24px rgba(0,0,0,.28);
+}
+.button.primary{
+  color:#111 !important;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+  border: 0 !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 10px 30px rgba(216,179,94,.18) !important;
+}
+.button.primary:hover{
+  background: linear-gradient(135deg, var(--accent-2), #ffe6a6) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 12px 36px rgba(216,179,94,.26) !important;
+}
+
+/* 히어로 오버레이(선택) */
+.hero-overlay{
+  pointer-events:none; position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(8,9,12,.55), rgba(8,9,12,0) 38%, rgba(8,9,12,.65) 100%);
+}
+
+/* 소제목/보조텍스트 */
+.section-kicker{
+  display:inline-block; margin-bottom:10px; letter-spacing:.12em; text-transform:uppercase;
+  font-size:12px; color:#e7d7a2;
+  background: rgba(216,179,94,.08); border:1px solid rgba(216,179,94,.28);
+  padding:4px 10px; border-radius:9999px;
+}
+.muted{ color: var(--muted) !important; }
+
+/* 가격 타이틀 & 배지 */
+.price-title{
+  display:flex; align-items:center; gap:10px;
+  font-weight:800; font-size:18px; letter-spacing:.005em;
+}
+.pill{
+  display:inline-block; padding:2px 10px; font-size:12px; font-weight:800;
+  border-radius:9999px; color:#111; line-height:1.9; border:0;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+}
+.pill-alt{
+  color:#e7ecf2; background: linear-gradient(180deg, #171c24,#12161d);
+  border: 1px solid #2a3242; box-shadow: none;
+}
+.text-accent{ color: var(--accent) !important; font-weight:800; }
+.pill-yellow{
+  background: transparent; color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 2px 10px; border-radius: 9999px; font-weight:800;
+  box-shadow: 0 0 0 1px rgba(216,179,94,.08) inset;
+}
+
+/* 가격 리스트 */
+.price-list{ list-style:none; margin:12px 0 0; padding:0; }
+.price-list li{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px 14px; border-radius:12px;
+  border:1px solid rgba(255,255,255,.055);
+  background: linear-gradient(180deg, rgba(255,255,255,.018), rgba(255,255,255,.01));
+}
+.price-list li + li{ margin-top:8px; }
+.price-list b{ font-weight:800; }
+.price-list span{
+  font-variant-numeric: tabular-nums;
+  font-weight:900; letter-spacing:.015em; color:#f6e2a4;
+}
+
+/* 카드 인터랙션 */
+.price-card{
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.price-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 44px rgba(0,0,0,.35);
+  border-color: rgba(255,255,255,.12);
+}
+
+/* 공지 박스(선입금 안내) */
+.notice-prepay{
+  border-left: 3px solid var(--accent);
+  background:
+    radial-gradient(80rem 40rem at 10% -20%, rgba(216,179,94,.06), transparent 45%),
+    linear-gradient(180deg, rgba(18,22,29,.80), rgba(14,17,22,.80));
+}
+.notice-prepay .hr-dim{
+  border:0; height:1px;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent);
+  margin:14px 0;
+}
+
+/* 포커스/키보드 접근성 */
+a:focus-visible, .button:focus-visible{
+  outline:2px solid var(--ring); outline-offset:2px; border-radius:12px;
+}
+
+/* 푸터 링크 */
+footer a{ color:#cfd5df; }
+footer a:hover{ color:#fff; text-decoration:underline; }
