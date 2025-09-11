@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>지역별 출장마사지 | 츄츄마사지</title>
+  <meta name="description" content="서울·경기·인천 전 지역 출장마사지. 원하는 지역을 선택해 빠르게 예약하세요. 010-4637-9556 · 카톡 msg00100"/>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+  <style>
+    body{margin:0;background:#0b0b0c;color:#e8eaed;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Pretendard,Noto Sans KR,sans-serif}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .button{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid #1f2937;background:#151518;color:#e8eaed;text-decoration:none}
+    .button.primary{background:linear-gradient(135deg,#ffbe3b,#ffd26f);color:#111;border-color:transparent}
+    .card{background:#111114;border:1px solid #1f2937;border-radius:18px;padding:18px;margin:16px 0}
+    .grid{display:grid;gap:12px}
+    @media(min-width:760px){ .grid.cols-3{grid-template-columns:1fr 1fr 1fr} }
+    .links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+    @media(min-width:760px){ .links{grid-template-columns:repeat(3,minmax(0,1fr))} }
+    a.link{display:block;padding:10px 12px;border:1px solid #1f2937;border-radius:12px;background:#0f1013;color:#e5e7eb;text-decoration:none}
+    a.link:hover{background:#17181c}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p><a class="button" href="/">← 홈으로</a></p>
+    <h1>지역별 출장마사지</h1>
+
+    <!-- 1) 대표 지역 3개만 먼저 연결 (이미 있는 페이지) -->
+    <div class="grid cols-3">
+      <div class="card">
+        <h2>서울</h2>
+        <p><a class="button" href="/seoul.html">서울 전체 안내 보기 →</a></p>
+      </div>
+      <div class="card">
+        <h2>경기</h2>
+        <p><a class="button" href="/gyeonggi.html">경기 전체 안내 보기 →</a></p>
+      </div>
+      <div class="card">
+        <h2>인천</h2>
+        <p><a class="button" href="/incheon.html">인천 전체 안내 보기 →</a></p>
+      </div>
+    </div>
+
+    <!-- 2) 세부 지역은 나중에 하나씩 추가하면 됨 -->
+    <div class="card">
+      <h3>세부 지역(선택사항)</h3>
+      <div class="links">
+        <a class="link" href="/areas/seoul-gangnam.html">서울 강남구</a>
+        <a class="link" href="/areas/seoul-yeongdeungpo.html">서울 영등포구</a>
+        <a class="link" href="/areas/gg-suwon.html">경기 수원</a>
+        <a class="link" href="/areas/ic-bupyeong.html">인천 부평구</a>
+        <!-- 없는 파일은 나중에 만들면 자동으로 살아납니다 -->
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>빠른 문의</h3>
+      <p><a class="button primary" href="tel:01046379556">📞 전화 010-4637-9556</a>
+         <a class="button" href="https://open.kakao.com/o/shGxbqRh" target="_blank" rel="noopener">💬 오픈채팅</a></p>
+    </div>
+  </div>
+</body>
+</html>
